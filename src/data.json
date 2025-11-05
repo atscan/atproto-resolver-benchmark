@@ -1,0 +1,22 @@
+{
+    "plcResolvers": [
+        {
+            "url": "https://plc.directory"
+        },
+        {
+            "url": "https://plc.wtf"
+        },
+        {
+            "url": "https://allegedly.wallera.computer"
+        },
+        {
+            "url": "https://plc.parakeet.at"
+        },
+        {
+            "url": "https://plcbundle.atscan.net"
+        },        
+        {
+            "url": "http://localhost:8080"
+        }
+    ]
+}
