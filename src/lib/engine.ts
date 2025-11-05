@@ -68,13 +68,14 @@ export async function runBenchmark(opts: any) {
                 didDoc = await resp.text()
             } catch (e) {}
 
+            const responseTime = Math.round(scannedUrls[url].timeToFetch)
             endpointRes.responses.push({
                 ok: !!didDoc,
                 did,
                 hash: didDoc ? await sha256(didDoc.trim()) : null,
-                responseTime: scannedUrls[url].timeToFetch,
+                responseTime,
             })
-            endpointRes.totalTime += scannedUrls[url].timeToFetch
+            endpointRes.totalTime += responseTime
             endpointRes.processed++
             endpointRes.done = endpointRes.processed === endpointRes.count
 
