@@ -14,9 +14,12 @@
         },
         {
             "url": "https://plcbundle.atscan.net"
+        },
+        {
+            "url": "https://plcbundle3.atscan.net"
         },        
         {
-            "url": "http://localhost:8080"
+            "url": "http://localhost:7009"
         }
     ]
 }
